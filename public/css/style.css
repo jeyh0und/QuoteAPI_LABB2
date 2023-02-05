@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to right, #8d8ded, #DCDCDC);
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-top: 50px;
+    font-size: 2.4rem;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #333;
+    margin-top: 30px;
+    font-size: 2.0rem;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #b114e6;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.addQuote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0a3d91;
+    margin-bottom: 2rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #999;
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #999;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

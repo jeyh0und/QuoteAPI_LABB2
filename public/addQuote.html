@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Quote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="addQuote">Add a quote to the database.</h1>
+    <form action="/addQuote" method="post">
+        <input type="text" name="quote" placeholder="Quote">
+        <input type="text" name="authorName" placeholder="Author name">
+        <input type="text" name="authorOrigin" placeholder="Author origin">
+        <input type="text" name="topic" placeholder="Topic">
+        <button type="submit">Add quote</button>
+    </form>
+</body>
+
+</html>
