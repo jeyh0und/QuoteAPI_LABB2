@@ -39,11 +39,11 @@ app.get("/quotes", (req, res) => {
 })
 
 app.get("/quotes/:id", (req, res) => {
-    const quote = quotes.allQuotes.find(x => x.id === req.params.id)
-    if (!quote) {
+    if(req.params.id > 0 && req.params.id <= quotes.allQuotes.length){
+        return res.send(quotes.allQuotes[req.params.id - 1])
+    } else {
         return res.status(404).send("Id not found!")
     }
-    res.send(quote)
 })
 
 app.get("/addQuote", (req, res) => {
