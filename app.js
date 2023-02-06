@@ -39,10 +39,10 @@ app.get("/quotes", (req, res) => {
 })
 
 app.get("/quotes/:id", (req, res) => {
-    if(req.params.id > 0 && req.params.id <= quotes.allQuotes.length){
+    if (req.params.id > 0 && req.params.id <= quotes.allQuotes.length) {
         return res.send(quotes.allQuotes[req.params.id - 1])
     } else {
-        return res.status(404).send("Id not found!")
+        return res.status(404).send("Quote with this ID not found!")
     }
 })
 
@@ -74,7 +74,7 @@ app.get("/deleteQuote/:id", (req, res) => {
     if (req.params.id > 0 && req.params.id <= quotes.allQuotes.length) {
         quotes.allQuotes.splice(req.params.id - 1, 1)
         res.send("Quote deleted successfully!")
-    } else{
+    } else {
         return res.status(404).send("Quote not found!")
     }
 })
